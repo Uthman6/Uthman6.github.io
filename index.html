@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badawi Aminu Muhammed | Data & BI expert | Research Scientist </title>
+  <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <img src="Abdul.jpg" alt="Badawi Aminu Muhammed" class="profile-pic">
+    <h1>Abdurrahman Uthman</h1>
+    <p>Business Intelligence expert • Data Analyst • Research Scientist </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#analytics">Analytics</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- ===== ABOUT SECTION ===== -->
+	<section id="about">
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    <img src="Abdul.jpg" alt="Badawi Aminu Muhammed" class="profile-img">
+
+    <div class="about-text">
+      <p>
+        Hello 👋 I’m <strong>Badawi Aminu Muhammed</strong> — a <strong> Data Analyst, and Business intelligence expert, Monitoring & Evaluation Specialist </strong> 
+        with deep expertise in transforming data into actionable insights. My work spans 
+        health analytics (epidemiology and Bioinformatics), machine learning, scientific research, business intelligence, and predictive modeling, integrating both 
+        <strong>scientific precision</strong> and <strong>strategic decision thinking</strong>.
+      </p>
+
+      <p>
+        I’m currently working remotely with <strong>Uzat Global Consulting</strong> as a Training Facilitator, 
+        while building intelligent, data-driven projects through my consultancy brand, 
+        <strong>Cigma General Solutions</strong>. I thrive at the intersection of analytics, innovation, 
+        and impact — where raw data meets real-world transformation.
+	  </p>
+    </div>
+  </div>
+</section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can download my professional resume below:</p>
+    <a href="Badawi_Aminu's_CV.pdf" download class="resume-btn">
+      📄 Download Resume
+    </a>
+  </section>
+<!-- ===== PROFESSIONAL SKILLS SECTION ===== -->
+<section id="professional-skills" class="professional-skills">
+  <div class="container">
+    <h2 class="section-title">Professional Skills</h2>
+    <p class="section-subtitle">
+      A concise, professional overview of core technical, research, and M&E competencies.
+    </p>
+
+    <div class="skills-grid">
+      <!-- Languages -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h3 class="skill-title">Languages</h3>
+        <p class="skill-items">Python · R · SQL · LaTeX</p>
+      </div>
+
+      <!-- Monitoring & Evaluation -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+        <h3 class="skill-title">Monitoring &amp; Evaluation</h3>
+        <p class="skill-items">
+          Logical Framework · Theory of Change · Results-Based Management
+        </p>
+      </div>
+
+      <!-- Research -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-flask"></i></div>
+        <h3 class="skill-title">Research</h3>
+        <p class="skill-items">
+          Survey Design · Data Cleaning · Literature Review · Impact Evaluation
+        </p>
+      </div>
+
+      <!-- Visualization -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3 class="skill-title">Visualization</h3>
+        <p class="skill-items">Tableau · Power BI · ggplot2 · Matplotlib</p>
+      </div>
+
+      <!-- Automation -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+        <h3 class="skill-title">Automation</h3>
+        <p class="skill-items">Apache Airflow · n8n · Power Automate</p>
+      </div>
+
+      <!-- Statistical Analysis -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+        <h3 class="skill-title">Statistical Analysis</h3>
+        <p class="skill-items">SPSS · NVivo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animation script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll(".skill-card");
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    cards.forEach(card => observer.observe(card));
+  });
+</script>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+<section id="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <h3>📈 Inflation Forecasting Model</h3>
+      <p>
+        A predictive time series model built using R and Python to forecast 
+        monthly inflation rates in Nigeria. Integrated ARIMA, XGBoost, and feature engineering.
+      </p>
+      <a href="https://github.com/e-badawy/inflation-forecast" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🦟 Malaria Epidemiology Dashboard</h3>
+      <p>
+        An interactive Power BI dashboard visualizing malaria prevalence, 
+        demographics, and intervention data. Focused on spatial trends and risk mapping.
+      </p>
+      <a href="https://github.com/e-badawy/malaria-data-analysis" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🌍 QGIS Health Mapping</h3>
+      <p>
+        Geospatial analysis project using QGIS and GeoPandas to map disease hotspots 
+        and healthcare facility access in rural communities.
+      </p>
+      <a href="https://github.com/e-badawy/qgis-health-mapping" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🧾 Excel Inventory Management System (VBA Automated)</h3>
+      <p>
+       This project automates stock management in Excel using VBA macros and an interactive UserForm popup.
+It replaces manual updates with a fast, button-driven process that:
+      </p>
+      <a href="https://github.com/E-badawy/Excel-Inventory-Automation-System" target="_blank" class="project-btn">View Project</a>
+    </div>
+	  
+	 <div class="project-card">
+      <h3> Excel HR Employee Large Dataset Search bar Automation</h3>
+      <p>
+        This project demonstrates how to use Excel VBA and ActiveX Controls to create a functional and automated Employee Record Search System.
+It combines clean data management, user-friendly search capability, and dynamic column formatting.
+      </p>
+      <a href="https://github.com/E-badawy/Excel-Employee-Search-VBA" target="_blank" class="project-btn">View Project</a> 
+	 </div>
+
+	<div class="project-card">	 
+      <h3> Employee PowerBI Dashboard Analytics</h3>
+      <p>
+        This Power BI dashboard provides interactive visual insights into HR employee management dataset — tracking performance, efficiency, and regional analytics.
+It complements the Excel VBA Search Automation System, transforming operational data into strategic business intelligence.
+      </p>
+      <a href="https://github.com/E-badawy/PowerBI-Employee-Analytics" target="_blank" class="project-btn">View Project</a>
+	</div>	 
+    </div>
+  </div>
+</section>
+
+  <section id="analytics">
+    <h2>Analytics Snapshot</h2>
+    <p>Quick insight into my data analysis domains and project focus areas.</p>
+    <canvas id="skillsChart" width="400" height="250"></canvas>
+  </section>
+	
+<!-- ===== Contact Section ===== -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">
+      Let’s collaborate, consult, or talk data. I’m open to research, analytics, and strategic opportunities.
+    </p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p><a href="mailto:Badawy.muhammed@floret.org">Badawy.muhammed@floret.org</a></p>
+          <p><a href="mailto:officialbadawy@gmail.com">officialbadawy@gmail.com</a></p>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <h4>Phone</h4>
+          <p><a href="tel:+2348065440074">08065440074</a></p>
+          <p><a href="tel:+2348069002561">08069002561</a></p>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Location</h4>
+          <p>Zaria, Kaduna State, Nigeria</p>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <h4>Availability</h4>
+          <p>Mon – Sat: 9am – 6pm (GMT+1)</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/elameenbadawy" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/e-badawy" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/2348065440074" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/manlgjky" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Script for Animations and Chart -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('hidden');
+      observer.observe(section);
+    });
+
+    // Chart.js bar chart
+    const ctx = document.getElementById('skillsChart');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Python', 'R', 'SQL', 'Power BI', 'QGIS', 'Machine Learning', 'SPSS', 'Excel'],
+        datasets: [{
+          label: 'Proficiency (%)',
+          data: [95, 90, 85, 80, 85, 88, 90, 95],
+          borderWidth: 1,
+          backgroundColor: [
+            '#001f3f', '#003366', '#004c99', '#0066cc', '#3385ff', '#66a3ff',  '#001f3f', '#004c99'
+          ]
+        }]
+      },
+      options: {
+        scales: {
+          y: { beginAtZero: true, max: 100, ticks: { stepSize: 20 } }
+        },
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Core Analytical Tools Proficiency' }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
