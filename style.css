@@ -1,0 +1,508 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #424242; /* Changed to Dark Charcoal */
+  background-color: #ECEFF1; /* Changed to Light Blue-Gray */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #00796B; /* Primary Teal */
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  position: relative;
+  
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  size: 100px
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #f4f4f4;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4DB6AC; /* Lighter Aqua Hover */
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #00796B; /* Primary Teal */
+  border-bottom: 2px solid #00796B; /* Primary Teal */
+  padding-bottom: 0.3em;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+  background-color: #fcfdfe; /* Slightly lighter background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  color: #00796B; /* Primary Teal */
+  font-size: 2em;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #00796B; /* Primary Teal */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00796B; /* Primary Teal */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.7;
+  color: #424242; /* Dark Charcoal */
+  font-size: 1.05em;
+}
+
+/* ===== PROFESSIONAL SKILLS SECTION ===== */
+
+.professional-skills {
+  padding: 80px 20px;
+  background-color: #ECEFF1; /* Light Blue-Gray */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.professional-skills .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00796B; /* Primary Teal */
+  margin-bottom: 10px;
+}
+
+.professional-skills .section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.skill-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 121, 107, 0.15); /* Shadow using primary teal */
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: #00796B; /* Primary Teal */
+  margin-bottom: 15px;
+}
+
+.skill-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00796B; /* Primary Teal */
+  margin-bottom: 10px;
+}
+
+.skill-items {
+  font-size: 0.95rem;
+  color: #424242; /* Dark Charcoal */
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .professional-skills {
+    padding: 60px 15px;
+  }
+
+  .skill-card {
+    padding: 25px 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* ---------- RESUME BUTTON ---------- */
+.resume-btn {
+  background-color: #00796B; /* Primary Teal */
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #004D40; /* Slightly darker teal on hover */
+}
+
+/* ===== PROJECTS SECTION ===== */
+#projects {
+  background-color: #ffffff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+#projects h2 {
+  color: #00796B; /* Primary Teal */
+  font-size: 2em;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #00796B; /* Primary Teal */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Grid layout for project cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual project card */
+.project-card {
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  color: #00796B; /* Primary Teal */
+  margin-bottom: 10px;
+  font-size: 1.25em;
+}
+
+.project-card p {
+  color: #424242; /* Dark Charcoal */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Button inside each card */
+.project-btn {
+  display: inline-block;
+  background-color: #00796B; /* Primary Teal */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #004D40; /* Slightly darker teal on hover */
+}
+
+/* ---------- ANALYTICS CHART ---------- */
+#analytics {
+  text-align: center;
+}
+
+canvas {
+  margin-top: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* ===== Contact Section ===== */
+
+/* =========================
+    Contact Section
+========================= */
+.contact {
+  padding: 80px 0;
+  background-color: #fcfdfe; /* Light background */
+  color: #424242; /* Dark Charcoal */
+  text-align: center;
+
+}
+
+/* Section Title & Subtitle */
+.contact .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #00796B; /* Primary Teal */
+}
+
+.contact .section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================
+    Contact Container
+========================= */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* =========================
+    Contact Info - Refactored for consistency
+========================= */
+
+/* Consolidated style for all contact information blocks */
+.contact-item, .contact-items, .contact-it, .contact-ites {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  text-align: justify;
+  /* Retaining original widths for layout integrity, but recommend refactoring (see previous response) */
+}
+
+.contact-item { width: 30%; }
+.contact-items { width: 30%; }
+.contact-it { width: 95%; }
+.contact-ites { width: 30%; }
+
+.contact-item:hover, .contact-items:hover, .contact-it:hover, .contact-ites:hover {
+  transform: translateY(-4px);
+}
+
+/* Icon in Contact Item */
+.contact-item i, .contact-items i, .contact-it i, .contact-ites i {
+  font-size: 1.8rem;
+  color: #00796B; /* Primary Teal */
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Headings in Contact Item */
+.contact-item h4, .contact-items h4, .contact-it h4, .contact-ites h4 {
+  margin-bottom: 5px;
+  color: #00796B; /* Primary Teal */
+}
+
+/* Links in Contact Item */
+.contact-item a, .contact-items a, .contact-it a, .contact-ites a {
+  color: #424242; /* Dark Charcoal */
+  text-decoration: none;
+}
+
+.contact-item a:hover, .contact-items a:hover, .contact-it a:hover, .contact-ites a:hover {
+  color: #4DB6AC; /* Lighter Aqua Hover */
+}
+
+/* =========================
+    Social Links
+========================= */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    /* Add 'margin: 0 auto;' to center the block itself */
+    margin: 20px auto 0 auto;
+    width: 95%;
+}
+
+.social-links a {
+  color: #00796B; /* Primary Teal */
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+  align-items: center;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #4DB6AC; /* Lighter Aqua Hover */
+}
+/* =========================
+    Contact Form
+========================= */
+
+.contact{
+padding: 60px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+}
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  text-align: justify;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.info-blocks-group{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3%;
+  padding: 3%;
+  align-content: space-between;
+  
+}
+/* Button in Contact Form */
+.contact-form button.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #00796B; /* Primary Teal */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button.btn:hover {
+  background-color: #004D40; /* Slightly darker teal on hover */
+}
+
+/* =========================
+    Responsive Design
+========================= */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+
+/* ===== Social Links (Duplicate block removed for clarity, main colors updated above) ===== */
+
+/* ---------- FADE-IN EFFECT ---------- */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5em 1em;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5em;
+  }
+
+  section {
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
